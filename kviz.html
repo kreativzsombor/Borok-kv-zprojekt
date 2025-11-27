@@ -12,48 +12,34 @@
 <title>Kvíz</title>
 </head>
 <body>
-    <main class="container">
+    <main class="container bg-dark">
         <div class="container mt-5">
-			<form id="quizForm">
-				<div class="row g-4">
-					<div class="col-12">
-						<div class="card h-100">
-							<div class="card-body">
-								<h5 class="card-title">Melyik ciklus fut le legalább egyszer?</h5>
-								<div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="q1" value="while">
-										<label class="form-check-label">while</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="q1" value="do-while">
-										<label class="form-check-label">do-while</label>
-									</div>
-									<div class="form-check">
-										<input class="form-check-input" type="radio" name="q1" value="for">
-										<label class="form-check-label">for</label>
-									</div>
-								</div>
-							</div>
-							<div class="card-footer text-muted" id="result1"></div>
-						</div>
-					</div>
+            <form id="quizForm">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title" id="questionTitle"></h5>
+                                <div id="answersContainer"></div>
+                            </div>
+                            <div class="card-footer text-muted" id="result1"></div>
+                        </div>
+                    </div>
 
-					<div class="col-12">
-						<div class="card h-100">
-							<div class="card-body d-flex align-items-center justify-content-center" style="height:100%">
-								<button type="button" class="btn btn-primary w-100" id="submitBtn">Tovább a következő kérdésre</button>
-							</div>
-							<div class="card-footer text-muted" id="resultSummary"></div>
-						</div>
-					</div>
-
-				</div>
-			</form>
-		</div>
+                    <div class="col-12">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center justify-content-center" style="height:100%">
+                                <button type="button" class="btn btn-secondary w-100" id="submitBtn">Tovább a következő kérdésre</button>
+                            </div>
+                            <div class="card-footer text-muted" id="resultSummary"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
         <div class="mt-4">
-            <h4>Eddigi válaszok</h4>
-            <table class="table table-bordered table-striped" id="answersTable">
+            <h4 class="EValasz">Eddigi válaszok</h4>
+            <table class="table table-bordered table-striped table-dark" id="answersTable">
                 <thead>
                     <tr>
                         <th>Kérdés</th>
@@ -61,15 +47,12 @@
                         <th>Értékelés</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="answersList">
                 </tbody>
             </table>
         </div>
     </main>
-
-<script>
-</script>
-
+<script src="Kviz.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 </body>

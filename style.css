@@ -1,0 +1,47 @@
+.subject-történelem {
+    background-color: #D2B48C;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.subject-matematika {
+    background-color: #00CED1;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.subject-magyar {
+    background-color: #DAA520;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.subject-bonus {
+    background-color: #6C757D;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+body {
+    background-color: darkslategrey;
+}
+.EValasz {
+    color: white;
+}  
